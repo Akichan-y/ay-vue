@@ -1,0 +1,17 @@
+{
+  "projects": {
+    "default": "ay-vue"
+  },
+  "targets": {
+    "ay-vue": {
+      "hosting": {
+        "ay-vue-quality": [
+          "ay-vue-quality"
+        ],
+        "ay-vue": [
+          "ay-vue"
+        ]
+      }
+    }
+  }
+}

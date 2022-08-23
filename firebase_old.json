@@ -1,0 +1,23 @@
+{
+  "hosting": [
+
+    {
+      "target": "ay-vue",
+      "public": "public",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ]
+    },
+    {
+      "target": "ay-vue-quality",
+      "public": "public-ay-vue-quality",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ]
+    }
+  ]
+}
