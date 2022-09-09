@@ -939,8 +939,8 @@
 https://stackoverflow.com/questions/68039544/vuetify-changing-min-height-of-v-application-wrap
 ================================================ */
 .v-application--wrap {
-  /* min-height: unset; */
-  min-height: 58vh;
+  min-height: unset;
+  /* min-height: 58vh; */
 }
 
 .pi_graph {
@@ -1389,7 +1389,7 @@ export default {
     },
 
     Beki() {
-      console.log("入りましたよ");
+      // console.log("入りましたよ");
       let NowChinchoku = Math.round(this.getCountData - this.calc_BekiKaisu);
       //  let NowChinchoku = this.ShinchokuDai2;
       switch (true) {

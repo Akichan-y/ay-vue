@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import compMachineHP from '~/components/compMachineHP.vue';
+import compMachineHP_lite from '~/components/compMachineHP_lite.vue';
 // import compMachineFSys from '~/components/compMachineFSys.vue';
 import compCarousel from '~/components/carousel.vue';
 import weather_comp from '~/components/weather_comp.vue';
@@ -29,7 +30,8 @@ export default {
       NowPre: 0,
       NowTmp: 0,
       NowEnvTime: new Date(),
-
+      
+      LightMode:true,
       Nishio:false,
       NishioAP:true,
       NishioHP:false,
@@ -46,6 +48,7 @@ export default {
   },
   components:{
     compMachineHP,
+    compMachineHP_lite,
     // compMachineFSys,
     weather_comp,
     compCarousel,
