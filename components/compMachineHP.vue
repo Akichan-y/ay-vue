@@ -1619,12 +1619,15 @@ export default {
         this.nameAB
       );
       this.NowBikou = this.$store.getters["timeBank/getBikouArry"](this.nameAB);
-
+      
       this.KeikakuDai = this.$store.getters["timeBank/getKeikakuDaiArry"](
         this.nameAB
       );
+      console.log("どうなんでしょうか・・・")
       if (Number(this.KeikakuDai) > 0) {
+        
         this.checkBox = true;
+        console.log("this.checkBoxにはいっています")
       }
       this.ZangyouJikan = this.$store.getters["timeBank/getZangyouJikanArry"](
         this.nameAB
@@ -1664,17 +1667,17 @@ export default {
         // console.log(BekiKousuByou);
         let GenzaiBekiDai = Math.round(this.getProgressSeconds / BekiKousuByou);
         let ShinchokuDai = this.getCountData - GenzaiBekiDai;
-        console.log(this.nameAB+"現在のべき台数は、"+GenzaiBekiDai+"ShinchokuDaiは"+ShinchokuDai);
+        // console.log(this.nameAB+"現在のべき台数は、"+GenzaiBekiDai+"ShinchokuDaiは"+ShinchokuDai);
         this.ShinchokuDai2 = this.getCountData - GenzaiBekiDai;
-        console.log(this.nameAB+"No2.現在のべき台数は、"+GenzaiBekiDai+"ShinchokuDaiは"+this.ShinchokuDai2);
+        // console.log(this.nameAB+"No2.現在のべき台数は、"+GenzaiBekiDai+"ShinchokuDaiは"+this.ShinchokuDai2);
         // let calc_result = Math.round(this.getCountData - this.KeikakuDai);
 
         if (isV) {
-          console.log("前半、this.ShinchokuDai2->"+this.ShinchokuDai2)
+          // console.log("前半、this.ShinchokuDai2->"+this.ShinchokuDai2)
           //Valur数値の場合
           return ShinchokuDai;
         } else {
-           console.log("!!!後半、this.ShinchokuDai2->"+this.ShinchokuDai2)
+          //  console.log("!!!後半、this.ShinchokuDai2->"+this.ShinchokuDai2)
           //文字列の場合
           if (ShinchokuDai < 0) {
             return `▲${Math.abs(ShinchokuDai)}`;

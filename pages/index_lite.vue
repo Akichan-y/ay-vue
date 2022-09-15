@@ -13,113 +13,72 @@
       <h2>{{getKeikaJikan}}</h2>
 
      </v-col>
-    <v-col  cols="12" sm="1" md="1" lg="1" xl="1">
-        <v-checkbox
-          v-model="Nishio"
-          label="西尾"
-        ></v-checkbox>
-     </v-col>
-     <v-col  cols="12" sm="1" md="1" lg="1" xl="1">
-        <v-checkbox
-          v-model="NishioHP"
-          label="HP"
-        ></v-checkbox>
-     </v-col>
-
-     <v-col  cols="12" sm="1" md="1" lg="1" xl="1">
-        <v-checkbox
-          v-model="Fukushima"
-          label="福島"
-        ></v-checkbox>
-     </v-col>
-     <v-col  cols="12" sm="1" md="1" lg="1" xl="1">
-        <v-checkbox
-          v-model="SHF"
-          label="SHF"
-        ></v-checkbox>
-     </v-col>
-     <v-col  cols="12" sm="1" md="1" lg="1" xl="1">
-        <v-checkbox
-          v-model="Recurrent"
-          label="Try"
-        ></v-checkbox>
-     </v-col>
+    
 
    </v-row>
 <v-container fluid>
 
-<v-row mb="1" pb="1"> 
+<v-row mt="2" mb="4" pb="1"> 
 
     
-    <!-- <v-col cols="12" sm="6" md="4" lg="3" xl="2" v-show="NishioHP == true"> -->
 
-    <v-col cols="12" sm="6" md="4" lg="3" xl="2"   v-if="Nishio == true">
+    <v-col class="d-flex align-center">
       <compMachineHP_lite name="MC024"/>
     </v-col>
-    <v-col cols="12" sm="6" md="4" lg="3" xl="2"   v-if="Nishio == true">
+    <v-col class="d-flex align-center">
       <compMachineHP_lite name="MC026"/>
     </v-col>
-    <v-col cols="12" sm="6" md="4" lg="3" xl="2"   v-if="Nishio == true">
+    <v-col class="d-flex align-center">
       <compMachineHP_lite name="MC027"/>
     </v-col>
-    <v-col cols="12" sm="6" md="4" lg="3" xl="2"   v-if="Nishio == true">
+    <v-col class="d-flex align-center">
       <compMachineHP_lite name="MC028"/>
     </v-col>
     
-    <v-col cols="12" sm="6" md="4" lg="3" xl="2"   v-if="Nishio == true">
+    <v-col class="d-flex align-center">
       <compMachineHP_lite name="LN043"/>
     </v-col>
-    <v-col cols="12" sm="6" md="4" lg="3" xl="2"  v-if="NishioHP == true">
+    <v-col  class="d-flex align-center">
       <compMachineHP_lite name="MC031"/>
     </v-col>
-</v-row>
-<v-row mb="1" pb="1"> 
-    <v-col cols="12" sm="6" md="4" lg="3" xl="2"   v-if="NishioHP == true">
+    <v-col class="d-flex align-center">
       <compMachineHP_lite name="MC037"/>
     </v-col>
-    <v-col cols="12" sm="6" md="4" lg="3" xl="2"   v-if="NishioHP == true">
+    <v-col class="d-flex align-center">
       <compMachineHP_lite name="EX124"/>
     </v-col>
-    <v-col cols="12" sm="6" md="4" lg="3" xl="2"   v-if="NishioHP == true">
+    <v-col class="d-flex align-center">
       <compMachineHP_lite name="LN034"/>
     </v-col>
 
-     <v-col cols="12" sm="6" md="4" lg="3" xl="2" v-if="Fukushima == true">
-      <compMachineHP_lite name="MC009"/>
+    <v-col  class="d-flex align-left">
+      <compMachineHP_lite name="RW046"/>
     </v-col>
-    <v-col cols="12" sm="6" md="4" lg="3" xl="2" v-if="Fukushima == true">
-      <compMachineHP_lite name="MC010"/>
-    </v-col>
-    <v-col class=" text-center red" color="" cols="12" sm="6" md="4" lg="3" xl="2" v-if="Fukushima == true">
-      <span class="white--text text-h5  text--darken-2 ml-2" v-if="Fukushima == true">SW005</span>
-      <compMachineHP_lite name="MC011"/>
-      <!-- <compMachineHP_lite name="SW005"/> -->
-    </v-col>
-</v-row>
-<v-row mb="1" pb="1"> 
-    <v-col class=" text-center blue" cols="12" sm="6" md="4" lg="3" xl="2" v-if="Fukushima == true">
-      <span class="white--text text-h5  text--darken-2 ml-2" v-if="Fukushima == true">SW006</span>
-      <!-- <compMachineHP_lite name="SW006"/> -->
-      <compMachineHP_lite name="MC013"/>
-    </v-col>
-    <v-col cols="12" sm="6" md="4" lg="3" xl="2" v-if="SHF == true">
+
+    <v-col  class="d-flex align-center">
       <compMachineHP_lite name="RW050"/>
-    </v-col>
-    <v-col cols="12" sm="6" md="4" lg="3" xl="2" v-if="SHF == true">
+    </v-col>    
+    <v-col  class="d-flex align-center">
       <compMachineHP_lite name="RW052"/>
     </v-col>
-    <v-col cols="12" sm="6" md="4" lg="3" xl="2" v-if="SHF == true">
-      <compMachineHP_lite name="RW046"/>
-      <!-- <compMachineFSys name="RW046"/> -->
+    <v-col  class="d-flex align-center">
+      <compMachineHP_lite name="FSLS1"/>
     </v-col>
-    <v-col cols="12" sm="6" md="4" lg="3" xl="2" v-if="Recurrent == true">
+    <v-col  class="d-flex align-center">
+      <compMachineHP_lite name="HPT_P"/>
+    </v-col>
+    <v-col  class="d-flex align-center">
+      <compMachineHP_lite name="HPT_F"/>
+    </v-col>
+    <v-col  class="d-flex align-center">
+      <compMachineHP_lite name="AP_MX"/>
+    </v-col>
+  
+    <v-col  class="d-flex align-center">
       <compMachineHP_lite name="GT999"/>
     </v-col>
-    
-    <!-- <v-col cols="12" sm="6" md="4" lg="3" xl="2" v-if="Fukushima == true">
-      <compMachineHP_lite name="GT999"/>
-    </v-col> -->
 </v-row>
+
 </v-container>
  </v-app>
 </template>

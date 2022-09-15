@@ -60,10 +60,7 @@
           v-model="Nishio"
           label="西尾"
         ></v-checkbox>
-        <v-checkbox
-          v-model="LightMode"
-          label="Light"
-        ></v-checkbox>
+
      </v-col>
       <v-col  cols="12" sm="1" md="1" lg="1" xl="1">
         <v-checkbox
@@ -121,57 +118,6 @@
    </v-row>
 <v-container fluid>
 
-<v-row v-if="LightMode == true" >
-  <v-col>
-      <compMachineHP_lite name="MC024"/>
-  </v-col>
-  <v-col>
-      <compMachineHP_lite name="MC026"/>
-  </v-col>
-  <v-col>
-      <compMachineHP_lite name="MC027"/>
-  </v-col>
-  <v-col>
-      <compMachineHP_lite name="MC028"/>
-  </v-col>
-  <v-col>
-      <compMachineHP_lite name="LN043"/>
-  </v-col>
-  <v-col>
-      <compMachineHP_lite name="MC031"/>
-  </v-col>
-  <v-col>
-      <compMachineHP_lite name="MC037"/>
-  </v-col>
-  <v-col>
-      <compMachineHP_lite name="EX124"/>
-  </v-col>
-  <v-col>
-      <compMachineHP_lite name="LN034"/>
-  </v-col>
-  
-  <v-col>
-      <compMachineHP_lite name="RW050"/>
-  </v-col>
-  <v-col>
-      <compMachineHP_lite name="RW052"/>
-  </v-col>
-  <v-col>
-      <compMachineHP_lite name="RW046"/>
-  </v-col>
-  <v-col>
-      <compMachineHP_lite name="FSLS1"/>
-  </v-col>
-  <v-col>
-      <compMachineHP_lite name="HPT_P"/>
-  </v-col>
-  <v-col>
-      <compMachineHP_lite name="HPT_F"/>
-  </v-col>
-  <v-col>
-      <compMachineHP_lite name="AP_MX"/>
-  </v-col>
-</v-row>
 <v-row mb="1" pb="1"> 
     
     <!-- <v-col cols="12" sm="6" md="4" lg="3" xl="2" v-show="NishioHP == true"> -->

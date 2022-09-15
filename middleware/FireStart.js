@@ -1,9 +1,15 @@
-   export default function (context) {
+import Vue from 'vue'
+import Vuex from 'vuex'
+
+
+export default function (context) {
+  
     
   console.log('ミドルウェア');
-  machinesRensou= {};
-  this.machines=[];
+  let machinesRensou= {};
+  let machines=[];
   let machines2=[];
+
   this.$fire.firestore.collection("machines")
   .get()
   .then((querySnapshot) => {
@@ -13,7 +19,11 @@
         // https://nekorokkekun.hatenablog.com/entry/2019/09/25/114448
         // console.log(doc.id);
         // console.log(doc.id.machine);
-        this.machinesRensou[doc.id]=[doc.data()];
+
+        
+        machinesRensou[doc.id]=[doc.data()];
+        // this.machinesRensou[doc.id]=[doc.data()];
+        
         // console.log(this.machinesRensou[doc.id])
         this.machines.push(
           Object.assign({
